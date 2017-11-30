@@ -34,7 +34,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
     private void initData() {
         //Daniel
         Publisher randomHouse = new Publisher("RandomHouse", "123 Main Street");
-        //save publisher before attempting to add to a book. Will fail if does not exist
+        //save publisher before attempting to add to a book. Will fail if publisher does not exist
         publisherRepository.save(randomHouse);
 
         Author daniel = new Author("Daniel", "Smith");
